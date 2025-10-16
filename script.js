@@ -118,9 +118,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const orderForm = document.getElementById('orderForm');
     const summaryContent = document.getElementById('summary-content');
     const totalElement = document.getElementById('total');
-    const whatsappNumber = "27713341705"; // Updated WhatsApp number
+    const whatsappNumber = "27713341705"; 
 
-    // Prices must match input IDs/names
+    
     const prices = {
         'jelly-pack': 12,
         'watermelon': 1,
@@ -136,8 +136,8 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     const deliveryFees = {
-        'Mams East': 40, // Updated to R40
-        'Mams West': 40  // Updated to R40
+        'Mams East': 40, 
+        'Mams West': 40  
     };
 
     function formatItemName(id) {
