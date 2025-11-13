@@ -130,6 +130,8 @@ document.addEventListener('DOMContentLoaded', function () {
         'watch': 1,
         'doughnuts': 1,
         'sour-worm': 1,
+        'strawberry': 1,
+        'puffs': 1,
         'party-pack-10': 160,
         'party-pack-15': 220,
         'party-pack-20': 280
@@ -148,6 +150,8 @@ document.addEventListener('DOMContentLoaded', function () {
             'tongue': 'Tongue',
             'heart': 'Heart',
             'watch': 'Watch',
+            'strawberry': 'Strawberry',
+            'puffs': 'Puffs',
             'doughnuts': 'Doughnuts',
             'sour-worm': 'Sour Worm',
             'party-pack-10': 'Jelly Pack x10 Party Pack',
@@ -161,7 +165,7 @@ document.addEventListener('DOMContentLoaded', function () {
         let total = 0;
         for (const id of [
             'jelly-pack', 'watermelon', 'giant-snake', 'tongue',
-            'heart', 'watch', 'doughnuts', 'sour-worm'
+            'heart', 'watch', 'doughnuts', 'sour-worm', 'strawberry', 'puffs'
         ]) {
             const qty = parseInt(document.getElementById(id)?.value) || 0;
             total += qty * prices[id];
@@ -207,7 +211,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Individual Items
         for (const id of [
             'jelly-pack', 'watermelon', 'giant-snake', 'tongue',
-            'heart', 'watch', 'doughnuts', 'sour-worm'
+            'heart', 'watch', 'doughnuts', 'sour-worm', 'strawberry', 'puffs'
         ]) {
             const qty = parseInt(document.getElementById(id)?.value) || 0;
             if (qty > 0) {
